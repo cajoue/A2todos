@@ -12,17 +12,7 @@ export class TodosComponent implements OnInit {
   constructor(private _todoService: TodoService) { }
 
   ngOnInit() {
-    this.todos = [
-      {
-        text: 'install Angular CLI'
-      },
-      {
-        text: 'work through tutorial'
-      },
-      {
-        text: 'keep up with the changes'
-      }
-    ];
+    this.todos = this. _todoService.getTodos();
   }
 
   addTodo(){
