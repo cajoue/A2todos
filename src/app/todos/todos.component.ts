@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosComponent implements OnInit {
   todos;
+  text;
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +22,12 @@ export class TodosComponent implements OnInit {
         text: 'keep up with the changes'
       }
     ];
+  }
+
+  addTodo(){
+    this.todos.push({
+      text: this.text
+    });
   }
 
 }
