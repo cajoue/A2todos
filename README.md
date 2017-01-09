@@ -1,5 +1,8 @@
 # A2todos
 
+## From the tutorial by Traversy Media
+[Simple Angular 2 App With Angular CLI](https://www.youtube.com/watch?v=QMQbAoTLJX8)
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
 ## Development server
