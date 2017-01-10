@@ -48,5 +48,7 @@ export class TodosComponent implements OnInit {
       this.todos[i].text = this.text;
       }
     }
+
+    this._todoService.updateTodo(this.oldText, this.text);
   }
 }
