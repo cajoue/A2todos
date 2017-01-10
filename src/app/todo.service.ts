@@ -22,4 +22,15 @@ export class TodoService extends Init {
     // Set new todos
     localStorage.setItem('todos', JSON.stringify(todos));
   }
+
+  deleteTodo(todoText){
+    var todos = JSON.parse(localStorage.getItem('todos'));
+    for(var i=0; i < todos.length; i++){
+      if (todos[i].text === todoText) {
+        todos.splice(i, 1);
+      }
+    }
+    // Set new todos
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }
 }
